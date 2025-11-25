@@ -43,101 +43,181 @@
 <br>
 <br>
 
-<!---Descripcion de la empresa-->
+<!-- Hero Section con Alert -->
+    <div class="container mt-4">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">🎉 ¡Bienvenido a ReposteryFlow!</h4>
+            <p class="mb-0">La repostería artesanal más deliciosa, hecha con amor por aprendices del SENA</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
 
-<h1>¿Que tal? Somos ReposteryFlow</h1>
-<br>
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://cdn.pixabay.com/photo/2018/11/24/07/15/pasteleria-3835088_640.jpg" class="d-block w-100" alt="1ra imagen">
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.pixabay.com/photo/2014/09/04/19/28/cream-puff-435813_640.jpg" class="d-block w-100" alt="2da imagen">
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.pixabay.com/photo/2020/04/09/21/18/biscuit-5023135_640.jpg" class="d-block w-100" alt="3ra imagen">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<br>
-<p>Somos una empresa fundada por el SENA y aprendices inspirados en la reposteria; 
-    Nos encanta hacer pasteles,panaderia,y demas
-</p>
-<br>
-<p> <strong>A continuacion veras algunos puntos a tratar como cliente... </strong> <p>
-<br>
+        <!-- Carousel mejorado -->
+        <div class="card shadow mb-4">
+            <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.pixabay.com/photo/2018/11/24/07/15/pasteleria-3835088_640.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pastelería">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                            <h5>Repostería Artesanal</h5>
+                            <p>Productos frescos hechos con los mejores ingredientes</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.pixabay.com/photo/2014/09/04/19/28/cream-puff-435813_640.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pastelitos">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                            <h5>Dulces y Postres</h5>
+                            <p>Variedades deliciosas para todos los gustos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.pixabay.com/photo/2020/04/09/21/18/biscuit-5023135_640.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Galletas">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                            <h5>Panadería Gourmet</h5>
+                            <p>Pan fresco todos los días</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
 
-<h2>Accesibilidad</h2>
-<br>
-<p> Somos una empresa muy accesible puesto que vendemos nuestros productos a la mejor calidad y mejor precio.. No creas que no sabemos lo que hacemos,no cobramos por los materiales,cobramos bien por que sabemos lo rico y bueno que hacemos 🙌</p>
-<br>
-<h3> ¿Por que elegirnos?</h3>
-<br>
-<p>Somos totalmente financiados por el SENA y cada producto es artesanal,tranquilo que no subiras mucho de peso,esos kilitos de mas lo vas a disfrutar de la manera mas sana por nosotros</p>
+        <!-- Descripción con Cards -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="text-center mb-4 text-primary">¿Quiénes Somos? 🍰</h2>
+                <p class="lead text-center mb-4">
+                    Somos una empresa fundada por el SENA y aprendices apasionados por la repostería. 
+                    Nos encanta hacer pasteles, panadería y mucho más con dedicación y calidad.
+                </p>
+            </div>
+        </div>
 
-<h3>Confianza</h3>
-<br>
-<p>Con nosotros podras confiar tu dinero,tus gastos,fechas importantes,con nosotros cada bocado sabra bien,te guardara recuerdos y mucho mas! </p>
-<br>
+        <!-- Cards de características con iconos Bootstrap -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-body text-center">
+                        <div class="display-4 text-primary mb-3">💰</div>
+                        <h5 class="card-title">Accesibilidad</h5>
+                        <p class="card-text">
+                            Vendemos nuestros productos a la mejor calidad y mejor precio. 
+                            No cobramos por los materiales, cobramos por la calidad de lo que hacemos 🙌
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-success">
+                    <div class="card-body text-center">
+                        <div class="display-4 text-success mb-3">🌟</div>
+                        <h5 class="card-title">¿Por qué elegirnos?</h5>
+                        <p class="card-text">
+                            Totalmente financiados por el SENA. Cada producto es artesanal. 
+                            Esos kilitos de más los vas a disfrutar de la manera más sana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-info">
+                    <div class="card-body text-center">
+                        <div class="display-4 text-info mb-3">🤝</div>
+                        <h5 class="card-title">Confianza</h5>
+                        <p class="card-text">
+                            Con nosotros puedes confiar tu dinero y tus fechas importantes. 
+                            Cada bocado sabrá bien y te guardará recuerdos especiales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!--Ejemplos-->
-<h4>Mira un ejemplo de lo que hacemos! </h4>
-<br>
+        <!-- Ejemplo de producto -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4 text-secondary">Mira lo que hacemos 🎂</h3>
+            </div>
+            <div class="col-md-6 mx-auto">
+                <div class="card shadow">
+                    <img src="https://terely.com/cdn/shop/files/cake.jpg?v=1716324003&width=480" class="card-img-top" alt="Pastel rosa">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastel Personalizado</h5>
+                        <p class="card-text">
+                            Mira el último pastel que hicimos este mes. Hermoso, ¿no lo crees? 😍
+                        </p>
+                        <div class="d-grid">
+                            <a href="carrito.html" class="btn btn-primary">Ver Más Productos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="https://terely.com/cdn/shop/files/cake.jpg?v=1716324003&width=480" class="card-img-top" alt="Pastel rosa">
-  <div class="card-body">
-    <p class="card-text">Mira el ultimo pastel que hicimos este mes!. 
-        Hermoso no lo crees? 😁.
-    </p>
-  </div>
-</div>
-
-<br>
-<!--Preguntas frecuentes con acordeon-->
-<div class="accordion accordion-flush" id="accordionFlushExample">
-    <h4>   Preguntas frecuentes</h4>
-    <br>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        ¿Como se paga?
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Dependiendo del pedido y tus intereses,por ejemplo si tu quieres puedes pagar en Nequi,Bancolombia etc,o si tu objetivo es pagarlo cuando lo veas manejamos pago contraentrega en persona.</div>
+        <!-- Accordion de preguntas frecuentes mejorado -->
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h4 class="text-center mb-4">Preguntas Frecuentes ❓</h4>
+                <div class="accordion accordion-flush shadow" id="accordionFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <strong>💳 ¿Cómo se paga?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Dependiendo del pedido y tus intereses. Puedes pagar con Nequi, Bancolombia, 
+                                o si prefieres, manejamos pago contraentrega en persona.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <strong>💡 ¿Por qué tuvieron esta idea?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                Somos aprendices muy agradecidos con las oportunidades que nos da el SENA. 
+                                La mejor forma de recompensar es mediante este emprendimiento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <strong>🎨 ¿Se puede elegir el estilo?</strong>
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body">
+                                ¡Claro que sí! Puedes elegir todo sobre tu pastel: materiales, 
+                                si lo quieres Lite, muy dulce, y mucho más.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        ¿Por que tuvieron esta idea?
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Ya que somos unos aprendices muy agradecidos con las oportunidades que nos esta y dara aun el SENA,y la mejor forma de pagar o recompensarle es mediante eso.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        ¿Se puede elegir el estilo?
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Si claro que si! Tu puedes elegir todo sobre tu pastel,incluso sus materiales de composicion,si lo quieres Lite,si lo quieres muy dulce,y demas!.</div>
-    </div>
-  </div>
-</div>
-<br>
+
+    <!-- Footer con bg color -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2">© 2024 ReposteryFlow - SENA</p>
+            <p class="mb-0">Hecho con ❤️ por aprendices emprendedores</p>
+        </div>
+    </footer>
 </body>
 </html>

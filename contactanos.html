@@ -40,118 +40,187 @@
 </nav>
 <br>
 <br>
-<h1> Formulario para contactanos.</h1>
-<br>
+<div class="container mt-4">
 
 
-<div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Ingresa tu nombre</label>
-  </div>
-  <div class="col-auto">
-    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  </div>
-  <div class="col-auto">
-    <span id="passwordHelpInline" class="form-text">
-      Ejemplo: Pepito Andres
-    </span>
-  </div>
-</div>
-<br>
+        <!-- Título -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 text-primary">📞 Contáctanos</h1>
+            <p class="lead text-muted">Completa el formulario y nos pondremos en contacto contigo</p>
+        </div>
 
+        <div class="row g-4">
+            <!-- Columna del formulario -->
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Formulario de Contacto</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <form>
+                            <!-- Nombre -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-bold">
+                                    Nombre Completo <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-lg" id="nombre" placeholder="Pepito Andrés" required>
+                                <div class="form-text">Ingresa tu nombre completo</div>
+                            </div>
 
-<div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Ingresa tu apellido</label>
-  </div>
-  <div class="col-auto">
-    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  </div>
-  <div class="col-auto">
-    <span id="passwordHelpInline" class="form-text">
-      Ejemplo: Diaz salazar
-    </span>
-  </div>
-</div>
-<br>
+                            <!-- Apellido -->
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label fw-bold">
+                                    Apellido <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-lg" id="apellido" placeholder="Díaz Salazar" required>
+                                <div class="form-text">Ingresa tu apellido</div>
+                            </div>
 
-<div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Fecha de nacimiento</label>
-  </div>
-  <div class="col-auto">
-    <input type="date" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  </div>
-  <div class="col-auto">
-    <span id="passwordHelpInline" class="form-text">
-      Ingresala mediante el icono de fecha que esta al lado para que sea mas facil
-    </span>
-  </div>
-</div>
-<br>
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold">
+                                    Correo Electrónico <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control form-control-lg" id="email" placeholder="ejemplo@correo.com" required>
+                                <div class="form-text">Te contactaremos a este email</div>
+                            </div>
 
-<select class="form-select" aria-label="Default select example">
-  <option selected>Seleccione tu tipo de documento</option>
-  <option value="1">"R.C"</option>
-  <option value="2">"T.I"</option>
-  <option value="3">"C.C"</option>
-  <option value="3">"C.E"</option>
-</select>
-<br>
+                            <!-- Teléfono -->
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label fw-bold">
+                                    Teléfono <span class="text-danger">*</span>
+                                </label>
+                                <input type="tel" class="form-control form-control-lg" id="telefono" placeholder="300 123 4567" required>
+                                <div class="form-text">Número de contacto</div>
+                            </div>
 
-<div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="inputPassword6" class="col-form-label">Digita tu numero de identificacion</label>
-  </div>
-  <div class="col-auto">
-    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-  </div>
-  <div class="col-auto">
-    <span id="passwordHelpInline" class="form-text">
-      Ejemplo: 941275809
-    </span>
-  </div>
-</div>
-<br>
+                            <!-- Fecha de nacimiento -->
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label fw-bold">
+                                    Fecha de Nacimiento <span class="text-danger">*</span>
+                                </label>
+                                <input type="date" class="form-control form-control-lg" id="fecha" required>
+                            </div>
 
+                            <!-- Tipo de documento -->
+                            <div class="mb-3">
+                                <label for="tipoDoc" class="form-label fw-bold">
+                                    Tipo de Documento <span class="text-danger">*</span>
+                                </label>
+                                <select class="form-select form-select-lg" id="tipoDoc" required>
+                                    <option selected disabled>Selecciona tu tipo de documento</option>
+                                    <option value="RC">Registro Civil (R.C)</option>
+                                    <option value="TI">Tarjeta de Identidad (T.I)</option>
+                                    <option value="CC">Cédula de Ciudadanía (C.C)</option>
+                                    <option value="CE">Cédula de Extranjería (C.E)</option>
+                                </select>
+                            </div>
 
+                            <!-- Número de documento -->
+                            <div class="mb-3">
+                                <label for="numDoc" class="form-label fw-bold">
+                                    Número de Identificación <span class="text-danger">*</span>
+                                </label>
+                                <input type="number" class="form-control form-control-lg" id="numDoc" placeholder="941275809" required>
+                            </div>
 
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Deja tu mensaje acerca de tu producto que quieras y escribenos!</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+                            <!-- Mensaje -->
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label fw-bold">
+                                    Mensaje / Pedido <span class="text-danger">*</span>
+                                </label>
+                                <textarea class="form-control" id="mensaje" rows="5" placeholder="Cuéntanos qué producto te interesa o cualquier consulta que tengas..." required></textarea>
+                                <div class="form-text">Describe tu pedido o consulta</div>
+                            </div>
 
+                            <!-- Adjuntar foto -->
+                            <div class="mb-4">
+                                <label for="foto" class="form-label fw-bold">Adjunta una foto (opcional)</label>
+                                <input class="form-control" type="file" id="foto" accept="image/*">
+                                <div class="form-text">Si quieres un diseño específico, adjunta una imagen de referencia</div>
+                            </div>
 
+                            <!-- Verificación -->
+                            <div class="card bg-light mb-3">
+                                <div class="card-body">
+                                    <p class="fw-bold mb-2">¿Verificaste que tus datos sean correctos?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="verificacion" id="si" value="si">
+                                        <label class="form-check-label" for="si">
+                                            ✅ Sí, todo está correcto
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="verificacion" id="no" value="no" checked>
+                                        <label class="form-check-label" for="no">
+                                            ❌ No, los corregiré
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
 
-<div class="mb-3">
-  <label for="formFile" class="form-label">Adjunta tu foto</label>
-  <input class="form-control" type="file" id="formFile">
-</div>
+                            <!-- Botón de envío -->
+                            <div class="d-grid">
+                                <a href="enviado.html" class="btn btn-primary btn-lg">
+                                    📤 Enviar Mensaje
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
-<p>¿Enviaste bien tus datos y/o mensaje? Revisa para contactarnos de la mejor y mas rapida manera posible</p>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-  <label class="form-check-label" for="radioDefault1">
-    Si.
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-  <label class="form-check-label" for="radioDefault2">
-   No,los corregire.
-  </label>
-</div>
-<br>
+            <!-- Columna de información -->
+            <div class="col-lg-4">
+                <!-- Info de contacto -->
+                <div class="card shadow mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">📍 Información</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <h6 class="fw-bold">📧 Email</h6>
+                            <p class="mb-0">contacto@reposteryflow.com</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="fw-bold">📱 WhatsApp</h6>
+                            <p class="mb-0">+57 300 123 4567</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="fw-bold">🕐 Horario</h6>
+                            <p class="mb-0">Lun - Vie: 8am - 6pm<br>Sáb: 9am - 2pm</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold">📍 Ubicación</h6>
+                            <p class="mb-0">SENA - Centro de Formación<br>Palmira, Valle del Cauca</p>
+                        </div>
+                    </div>
+                </div>
 
-<button class="btn btn-primary me-md-2" type="button" type= "submit">
-    <a style="color: rgb(255, 255, 255);" href="enviado.html">Da click aqui para enviar!</a> 
-</button>
+                <!-- Métodos de pago -->
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0">💳 Métodos de Pago</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">✅ Nequi</li>
+                            <li class="mb-2">✅ Bancolombia</li>
+                            <li class="mb-2">✅ Efectivo</li>
+                            <li class="mb-0">✅ Contraentrega</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-<br>
-<br>
-
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2">© 2024 ReposteryFlow - SENA</p>
+            <p class="mb-0">Hecho con ❤️ por aprendices emprendedores</p>
+        </div>
+    </footer>
 </body>
 </html>
