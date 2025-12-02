@@ -1,4 +1,4 @@
-<img width="1831" height="885" alt="image" src="https://github.com/user-attachments/assets/5c7915b3-9508-4bbf-a309-be0a283304c1" />🍰 Proyecto ReposteryFlow SENA
+🍰 Proyecto ReposteryFlow SENA
 
 📌 Objetivo;
 
